@@ -1,0 +1,18 @@
+{
+  "name": "virtual-rounds-api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "API de gestion y lectura del panel Virtual Rounds.",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js",
+    "check": "node --check server.js && node --check db.js && node --check analytics.js && node --check policies.js && node --check parameters.js && node --check alarm-presets.js && node --check alarm-engine.js"
+  },
+  "engines": {
+    "node": ">=18.18"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.7.0"
+  }
+}
